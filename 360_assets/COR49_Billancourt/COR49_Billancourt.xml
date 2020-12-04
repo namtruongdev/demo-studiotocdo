@@ -17,19 +17,23 @@
   </hotspots>
   <images rows="1">
     <image src="images/0001.jpg">
+      <hotspot source="spot1" offsetX="770" offsetY="430" />
      <hotspot source="spot2" offsetX="880" offsetY="259" />
-    
     </image> 
     <image src="images/0002.jpg">
+      <hotspot source="spot1" offsetX="750" offsetY="430" />
        <hotspot source="spot2" offsetX="855" offsetY="259" />
     </image>
     <image src="images/0003.jpg">
+      <hotspot source="spot1" offsetX="730" offsetY="430" />
        <hotspot source="spot2" offsetX="830" offsetY="259" />
     </image>
     <image src="images/0004.jpg">
+      <hotspot source="spot1" offsetX="710" offsetY="430" />
        <hotspot source="spot2" offsetX="800" offsetY="259" />
     </image>
     <image src="images/0005.jpg">
+      <hotspot source="spot1" offsetX="710" offsetY="430" />
        <hotspot source="spot2" offsetX="780" offsetY="259" />
     </image>
     <image src="images/0006.jpg" />
@@ -57,36 +61,47 @@
     <image src="images/0028.jpg" />
     <image src="images/0029.jpg" />
     <image src="images/0030.jpg">
+      <hotspot source="spot1" offsetX="1130" offsetY="430" />
        <hotspot source="spot2" offsetX="1170" offsetY="259" />
     </image>
     <image src="images/0031.jpg">
+      <hotspot source="spot1" offsetX="1110" offsetY="430" />
        <hotspot source="spot2" offsetX="1160" offsetY="259" />
     </image>
     <image src="images/0032.jpg">
+      <hotspot source="spot1" offsetX="1100" offsetY="430" />
        <hotspot source="spot2" offsetX="1140" offsetY="259" />
     </image>
     <image src="images/0033.jpg">
+      <hotspot source="spot1" offsetX="1040" offsetY="430" />
        <hotspot source="spot2" offsetX="1120" offsetY="259" />
     </image>
     <image src="images/0034.jpg">
+      <hotspot source="spot1" offsetX="1000" offsetY="430" />
        <hotspot source="spot2" offsetX="1100" offsetY="259" />
     </image>
     <image src="images/0035.jpg">
+      <hotspot source="spot1" offsetX="960" offsetY="430" />
        <hotspot source="spot2" offsetX="1080" offsetY="259" />
     </image>
     <image src="images/0036.jpg">
+      <hotspot source="spot1" offsetX="920" offsetY="430" />
        <hotspot source="spot2" offsetX="1040" offsetY="259" />
     </image>
     <image src="images/0037.jpg">
+      <hotspot source="spot1" offsetX="880" offsetY="430" />
        <hotspot source="spot2" offsetX="1000" offsetY="259" />
     </image>
     <image src="images/0038.jpg">
+      <hotspot source="spot1" offsetX="840" offsetY="430" />
        <hotspot source="spot2" offsetX="960" offsetY="259" />
     </image>
     <image src="images/0039.jpg">
+      <hotspot source="spot1" offsetX="810" offsetY="430" />
        <hotspot source="spot2" offsetX="930" offsetY="259" />
     </image>
     <image src="images/0040.jpg">
+      <hotspot source="spot1" offsetX="780" offsetY="430" />
        <hotspot source="spot2" offsetX="910" offsetY="259" />
     </image>
   </images>
