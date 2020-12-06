@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
     <title>COR49_Billancourt</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use these three includes on your pages under <head> section -->
 
     <link type="text/css" rel="stylesheet" href="imagerotator/html/css/round.css" />
@@ -48,22 +48,43 @@
         </div>
 
         <script language="javascript" type="text/javascript">
-            var rotator = WR360.ImageRotator.Create('wr360PlayerId');
+            const initializeAPIDemo = (api) => {
+                api.hotspots.onAction(({
+                    hotspotInfo
+                }) => {
+                    switch (hotspotInfo.clickDataParam) {
+                        case 3:
+                            return location.assign(hotspotInfo.url);
+                            break;
 
-            rotator.licenseFileURL = 'license.lic';
-            rotator.settings.configFileURL = '360_assets/COR49_Billancourt/COR49_Billancourt.xml';
-            rotator.settings.graphicsPath = 'imagerotator/html/img/round';
-            rotator.settings.alt = '360 degree view - COR49_Billancourt';
-            rotator.settings.googleEventTracking = false;
-            rotator.settings.responsiveBaseWidth = 0;
-            rotator.settings.responsiveMinHeight = 0;
+                        default:
+                            alert('haha')
+                            break;
+                    }
+                });
+            }
+            jQuery(document).ready(function () {
 
-            rotator.runImageRotator();
+                jQuery('#wr360PlayerId').rotator({
+                    licenseFileURL: 'license.lic',
+                    configFileURL: '360_assets/COR49_Billancourt/COR49_Billancourt.xml',
+                    graphicsPath: 'imagerotator/html/img/round',
+                    alt: '360 degree view - COR49_Billancourt',
+                    googleEventTracking: false,
+                    apiReadyCallback: function (api, isFullScreen) {
+
+                        if (!isFullScreen)
+                            initializeAPIDemo(api);
+                    },
+                });
+
+            });
         </script>
 
     </div>
 
-
+    <iframe src="http://studiotocdo.vn/wp-content/uploads/vv360/VV2%20116/tour.html" title="360" loading="lazy"
+        referrerpolicy="same-origin"></iframe>
 </body>
 
 </html>
