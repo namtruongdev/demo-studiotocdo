@@ -2,89 +2,29 @@
 <html lang="vi">
 
 <head>
-    <title>COR49_Billancourt</title>
+    <title>Studiotocdo demo</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Use these three includes on your pages under <head> section -->
 
-    <link type="text/css" rel="stylesheet" href="imagerotator/html/css/round.css" />
-    <script type="text/javascript" src="imagerotator/html/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="imagerotator/html/js/imagerotator.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/round.css" />
 
-
-
-    <style type="text/css">
-        html,
-        body {
-            padding: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        /*-- Use #content CSS to customize size, position, border, etc of your 360 view --*/
-
-        #content {
-            width: 100%;
-            height: 100%;
-            border: none
-        }
-    </style>
-
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/imagerotator.js"></script>
 </head>
 
 
 <body>
-
-    <!--
-        Just copy / paste the content div below onto your page and define content CSS styles as needed.
-        Then set configFileURL below to point to your product configuration XML.
-    -->
-
-    <div id="content">
-
-        <div id="wr360PlayerId" class="wr360_player" style="background-color:#FFFFFF;">
-        </div>
-
-        <script language="javascript" type="text/javascript">
-            const initializeAPIDemo = (api) => {
-                api.hotspots.onAction(({
-                    hotspotInfo
-                }) => {
-                    switch (hotspotInfo.clickDataParam) {
-                        case 3:
-                            return location.assign(hotspotInfo.url);
-                            break;
-
-                        default:
-                            alert('haha')
-                            break;
-                    }
-                });
-            }
-            jQuery(document).ready(function () {
-
-                jQuery('#wr360PlayerId').rotator({
-                    licenseFileURL: 'license.lic',
-                    configFileURL: '360_assets/COR49_Billancourt/COR49_Billancourt.xml',
-                    graphicsPath: 'imagerotator/html/img/round',
-                    alt: '360 degree view - COR49_Billancourt',
-                    googleEventTracking: false,
-                    apiReadyCallback: function (api, isFullScreen) {
-
-                        if (!isFullScreen)
-                            initializeAPIDemo(api);
-                    },
-                });
-
-            });
-        </script>
-
-    </div>
+    <main id="content">
+        <section id="wr360PlayerId" class="wr360_player" style="background-color:#FFFFFF;">
+        </section>
+    </main>
 
     <iframe src="https://studiotocdo.vn/wp-content/uploads/vv360/VV2%20116/tour.html" title="360" loading="lazy"
         referrerpolicy="same-origin"></iframe>
+
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
